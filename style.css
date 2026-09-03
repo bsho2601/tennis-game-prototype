@@ -1,0 +1,83 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background:
+    radial-gradient(ellipse at 50% 0%, #16261a 0%, #0d170e 55%, #08110a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Baloo 2', sans-serif;
+  color: #f0ede8;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#hud {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 14px 8px;
+  margin-bottom: 4px;
+  background: linear-gradient(180deg, #21331f 0%, #182619 100%);
+  border: 3px solid #0a1409;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 0 #0a1409,
+    0 6px 10px rgba(0,0,0,0.45),
+    inset 0 2px 0 rgba(255,255,255,0.06);
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.pname {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px rgba(0,0,0,0.55);
+  paint-order: stroke fill;
+}
+
+.pscore {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: normal;
+  font-size: 30px;
+  min-width: 54px;
+  text-align: center;
+  -webkit-text-stroke: 3px rgba(0,0,0,0.55);
+  paint-order: stroke fill;
+}
+
+.pgames {
+  font-size: 10px;
+  font-weight: 600;
+  color: #93a894;
+  letter-spacing: 0.08em;
+}
+
+#hint {
+  font-size: 12px;
+  font-weight: 700;
+  color: #f0d820;
+  letter-spacing: 0.04em;
+  text-align: center;
+  min-width: 150px;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
+
+canvas {
+  border: 4px solid #0a1409;
+  border-radius: 10px;
+  box-shadow:
+    0 6px 0 #0a1409,
+    0 10px 18px rgba(0,0,0,0.5);
+}
+

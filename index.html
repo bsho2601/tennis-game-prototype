@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Tennis — Power Serve Window & Real Racket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="pre-match">
+
+<div id="hud">
+  <div class="slot">
+    <div class="pname" style="color:#4ab8f0">YOU</div>
+    <div class="pscore" id="ps" style="color:#4ab8f0">0</div>
+    <div class="pgames">GAMES <span id="pg">0</span></div>
+  </div>
+  <div id="hint"></div>
+  <div class="slot">
+    <div class="pname" id="opp-name" style="color:#f07070">ACE</div>
+    <div class="pscore" id="as" style="color:#f07070">0</div>
+    <div class="pgames">GAMES <span id="ag">0</span></div>
+  </div>
+</div>
+
+<canvas id="c" width="400" height="560"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
