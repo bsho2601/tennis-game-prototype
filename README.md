@@ -6,7 +6,7 @@ A 2D top-down tennis game built with plain HTML5 Canvas and vanilla JavaScript â
 
 ## Play it
 
-[**Live demo**](#) *(link goes here once deployed â€” see below)*
+[**Live demo**](https://bsho2601.github.io/tennis-game-prototype/)
 
 Or run it locally: clone the repo and open `index.html` in a browser (Chrome/Edge/Firefox all work).
 
