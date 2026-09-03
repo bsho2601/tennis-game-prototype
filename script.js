@@ -465,7 +465,14 @@ function drawPerson(pal, cx0, feetY, isPlayer, facing, armSwing, flashA, walkPha
   // bob (below) can overlap their tops by a pixel or two with no gap ever
   // showing at the hip seam.
   const hipY = oy + 15*PXS;
-  const leftHipX = ox + 2.55*PXS, rightHipX = ox + 6.95*PXS;
+  // Hip columns must mirror the same way drawGrid() mirrors the torso body
+  // (column c -> (GW-1-c), see its `lightCol` calc) — otherwise a flipped
+  // (AI) sprite's torso flips to face the other way while these legs stay
+  // planted at the un-mirrored player-side columns, reading as legs that
+  // don't belong to the body above them.
+  const leftHipCol = 2.55, rightHipCol = 6.95;
+  const leftHipX = ox + (flip ? (GW - 1 - leftHipCol) : leftHipCol) * PXS;
+  const rightHipX = ox + (flip ? (GW - 1 - rightHipCol) : rightHipCol) * PXS;
   const swing = Math.sin(walkPhase) * LEG_SWING_MAX * walkAmount;
   drawLeg(leftHipX, hipY, swing, pal.l, pal.o);
   drawLeg(rightHipX, hipY, -swing, pal.l, pal.o);
