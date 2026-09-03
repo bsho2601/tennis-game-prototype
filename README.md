@@ -43,6 +43,10 @@ Or run it locally: clone the repo and open `index.html` in a browser (Chrome/Edg
 
 Vanilla JavaScript, the Canvas 2D API, and the Web Audio API. No build tooling, no external libraries — `index.html`, `style.css`, and `script.js` are the entire project.
 
+## Development process
+
+Built through iterative, AI-assisted development with Claude (Anthropic) as a pair-programming tool. I drove the game design — the net-rush risk/reward system, the serve timing/aim mechanic, the per-court and per-loadout physics tuning, the tournament AI's difficulty profiles — through many rounds of playtesting and revision, and reviewed and understand the resulting implementation in depth. Commit history includes AI co-authorship attribution.
+
 ## Status
 
 Actively developed as a personal project.
